@@ -7,6 +7,7 @@ import reducer from './reducers'
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import './Styles/backgrounda.css'
 
 const store = createStore(reducer, applyMiddleware(thunk));
 
