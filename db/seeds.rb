@@ -1,7 +1,40 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+Home.new({
+    likes:0,
+    linkedin:'https://www.linkedin.com/in/harmandeep-mand-softwarelife/',
+    github:'https://github.com/JattCoder',
+    email:'harmandeepmand.hm@gmail.com'}).save
+About.new({
+    name:'Harmandeep S Mand',
+    description:'My Name is Harmandeep S Mand, Studied at Flatiron School and there will be more data'}).save
+
+Apps.new({
+    name:'Cricket Standings',
+    description:'Scrape data from website and manupilate the data and save it to txt file',
+    link:'https://github.com/JattCoder/CWC-Standings.git'}).save
+Apps.new({
+    name:'Meet Up',
+    description:'User can search for places, then either save to favorites or get directions to it',
+    link:'https://github.com/JattCoder/Meet_Up.git'}).save
+Apps.new({
+    name:'Tesla Find-Us',
+    description:'Tesla Owners can search for superchargers near by or by search within city, state, zip-code and Tesla Find-Us will plan and provide route',
+    link:'https://github.com/JattCoder/Meet_Up.git'}).save
+Apps.new({
+    name:'Google',
+    description:'User can add business and be part of city based chat or create chat with-in city they are located in',
+    link:'https://github.com/JattCoder/Google.git'}).save
+Apps.new({
+    name:'Portfolio',
+    description:'User can search for places, then either save to favorites or get directions to it',
+    link:'https://github.com/JattCoder/Meet_Up.git'}).save
+
+Quote.new({quote:'How does a project get to be a year late?... One day at a time.'}).save
+Quote.new({quote:'Programming can be fun, so can cryptography; however they should not be combined.'}).save
+Quote.new({quote:'When to use iterative development? You should use iterative development only on projects that you want to succeed.'}).save
+Quote.new({quote:'Simplicity is the soul of efficiency.'}).save
+Quote.new({quote:'A good way to stay flexible is to write less code.'}).save
+Quote.new({quote:'When debugging, novices insert corrective code; experts remove defective code.'}).save
+Quote.new({quote:'Inside every large program, there is a small program trying to get out.'}).save
+Quote.new({quote:"Every good work of software starts by scratching a developer's personal itch"}).save
+Quote.new({quote:'Any fool can write code that a computer can understand. Good programmers write code that humans can understand.'}).save
+Quote.new({quote:'The best way to get a project done faster is to start sooner'}).save
