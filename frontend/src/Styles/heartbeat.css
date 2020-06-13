@@ -1,0 +1,16 @@
+.heart:hover {
+    cursor: pointer;
+}
+
+.heart {
+    margin-top: 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    animation: crescendo 0.8s alternate infinite ease-in
+}
+  
+@keyframes crescendo {
+    0%   {transform: scale(0.9);}
+    100% {transform: scale(1.1);}
+}
