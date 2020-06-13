@@ -11,7 +11,7 @@ let Like = ({incLike, count}) => {
             </div>
         </div>
     )
-}// aw creamsoda diet --- 2L water >>> snapple apple
+}
 
 const mapStateToProps = (state) => ({count: state.likeCount});
 const mapDispatchToProps = { incLike: updateLike };

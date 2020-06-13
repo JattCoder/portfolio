@@ -40,7 +40,6 @@ export default class Apps extends Component {
     const req = await fetch('http://localhost:2021/apps');
     if(req.ok){
       info = await req.json();
-      console.log('got data here')
       this.setState({
         apps: info
       });
@@ -50,7 +49,6 @@ export default class Apps extends Component {
   render(){
     const {apps, imgs}=this.state;
     if (!apps || !imgs) return null;
-    console.log("debug data", apps, imgs);
     return(
         <div height={'100%'}>
           <div className="container">
