@@ -71,10 +71,7 @@ export default class Apps extends Component {
                     showBullets={false}
                   /></div>
                   <div className='info'>
-                    <ul>
-                      <li>Used Ruby</li>
-                      <li>Used SQL Lite</li>
-                    </ul>
+                    {current.description}
                   </div>
                 </div>
                 <div className='card-body'>
