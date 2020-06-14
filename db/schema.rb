@@ -20,7 +20,8 @@ ActiveRecord::Schema.define(version: 2020_06_06_034317) do
   create_table "apps", force: :cascade do |t|
     t.string "name"
     t.text "description"
-    t.string "link"
+    t.string "source"
+    t.string "live"
   end
 
   create_table "homes", force: :cascade do |t|

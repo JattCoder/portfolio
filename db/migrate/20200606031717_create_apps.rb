@@ -3,7 +3,8 @@ class CreateApps < ActiveRecord::Migration[6.0]
     create_table :apps do |t|
       t.string :name
       t.text :description
-      t.string :link
+      t.string :source
+      t.string :live
     end
   end
 end
