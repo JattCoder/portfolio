@@ -30,8 +30,8 @@ Apps.new({
 Apps.new({
     name:'Portfolio',
     description:'A --/ B --/ C',
-    source:'https://github.com/JattCoder/Meet_Up.git',
-    live:'https://drive.google.com/file/d/18RXiSXECMGutCQXvij9v7P6eoOEE8Cd1/view?usp=sharing'}).save
+    source:'https://github.com/JattCoder/portfolio.git',
+    live:'https://drive.google.com/file/d/1lXCpbrt6WjcxwPsjmgwTvLiAdSD_zdr8/view?usp=sharing'}).save
 
 Quote.new({quote:'How does a project get to be a year late?... One day at a time.'}).save
 Quote.new({quote:'Programming can be fun, so can cryptography; however they should not be combined.'}).save
