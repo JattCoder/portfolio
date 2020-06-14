@@ -29,7 +29,3 @@ const btnstylie = {
     outline: 'none',
     zIndex: 10
 }
-
-const mouseEnter = {
-    backgroundColor: 'red'
-}

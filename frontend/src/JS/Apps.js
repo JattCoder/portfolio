@@ -11,11 +11,11 @@ export default class Apps extends Component {
     apps: [],
     selection: 0,
     reload: true,
-    imgs: [[{url: require('../AppImgs/App1/one.jpg')}, {url: require('../AppImgs/App1/two.png')}],
-    [{url: require('../AppImgs/App2/1.jpg')}, {url: require('../AppImgs/App2/2.png')}],
-    [{url: require('../AppImgs/App3/1.jpg')}, {url: require('../AppImgs/App3/2.jpg')}],
-    [{url: require('../AppImgs/App4/1.jpg')}, {url: require('../AppImgs/App4/2.jpg')}],
-    [{url: require('../AppImgs/App5/1.jpg')}, {url: require('../AppImgs/App5/2.jpg')}]]
+    imgs: [[{url: require('../AppImgs/App1/1.PNG')}, {url: require('../AppImgs/App1/2.PNG')},{url: require('../AppImgs/App1/3.PNG')}, {url: require('../AppImgs/App1/4.PNG')}],
+    [{url: require('../AppImgs/App2/1.PNG')}, {url: require('../AppImgs/App2/2.PNG')},{url: require('../AppImgs/App2/3.PNG')}, {url: require('../AppImgs/App2/4.PNG')}],
+    [{url: require('../AppImgs/App3/1.jpg')}],
+    [{url: require('../AppImgs/App4/1.PNG')}, {url: require('../AppImgs/App4/2.PNG')},{url: require('../AppImgs/App4/3.PNG')}, {url: require('../AppImgs/App4/4.PNG')}],
+    [{url: require('../AppImgs/App5/1.PNG')}, {url: require('../AppImgs/App5/2.PNG')},{url: require('../AppImgs/App5/3.PNG')}, {url: require('../AppImgs/App5/4.PNG')}]]
   }
 
   settings = {
