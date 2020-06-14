@@ -5,7 +5,7 @@ Home.new({
     email:'harmandeepmand.hm@gmail.com'}).save
 About.new({
     name:'Harmandeep S Mand',
-    description:'My Name is Harmandeep S Mand, Studied at Flatiron School and there will be more data'}).save
+    description:'My Name is Harmandeep S Mand, i am Full-Stack Software Engineer in Cleveland, OH. Graduated from Flatiron School. I enjoy building live Application for any platform, either its mobile, desktop or web.'}).save
 
 Apps.new({
     name:'Cricket Standings',
