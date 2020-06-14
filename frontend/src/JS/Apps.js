@@ -80,7 +80,7 @@ export default class Apps extends Component {
                 <div className='card-body'>
                   <small className='card-text text-sm-center text-muted'></small>
                   <br/>
-                  <button className='btn btn-sm follor btn-primary' onClick={()=>{window.open(current.link)}}>Source</button>
+                  <button className='btn btn-sm follor btn-primary' onClick={()=>{window.open(current.source)}}>Source</button>
                   <button className='btn_live' onClick={()=>{window.open(current.live)}}>Live</button>
                 </div>
               </div>
