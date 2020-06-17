@@ -3,12 +3,13 @@
     padding-top: 10px;
     opacity: 1;
     width: 500px;
-    height: 300px;
-    background-color: rgba(0,0,0,0.5);
+    height: 350px;
+    margin: 30px;
+    background-color: burlywood;
 }
 
 .card-title{
-    color: #262626;
+    color: black;
     display: block;
     overflow: hidden;
     font-size: 14px;
@@ -21,7 +22,7 @@
 .container{
     text-align: center;
     width: 100px;
-    margin-top: 200px;
+    margin-top: 150px;
 }
 
 .img{
@@ -31,11 +32,11 @@
 }
 
 .slick-prev:before, .slick-next:before {
-    color: white !important;
+    color: black !important;
 }
 
 .slick-dots li.slick-active button:before {
-    color:white !important;
+    color:black !important;
 }
 
 .slick-slide {
@@ -46,7 +47,7 @@
     background-color: #3897f0 !important;
     border: 1px solid #3897f0 !important;
     border-radius: 4px;
-    color: #fff;
+    color: black;
     width: 90px;
     margin-top: 20px !important;
     margin: 15px;
@@ -61,7 +62,7 @@
 }
 
 .heading{
-    color: white;
+    color: black;
 }
 
 .btn_live{

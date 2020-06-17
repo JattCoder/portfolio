@@ -1,12 +1,7 @@
-import { UPDATE_LIKE } from '../actions';
-const reducer = (state = {}, action) => {
+import { combineReducers } from 'redux'
+import quote from './getquote'
+import uplike from './updateLike'
 
-  switch (action.type) {
-    case UPDATE_LIKE:
-      console.log(action);
-       return { ...state, likeCount: action.data };
-    default:
-       return state;
-  }
-};
-export default reducer;
+export default combineReducers({
+  quote,uplike
+})

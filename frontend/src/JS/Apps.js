@@ -23,12 +23,15 @@ export default class Apps extends Component {
     infinity: true,
     speed: 500,
     arrows: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
+    rows:1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    slidesPerRow: 1,
     variableWidth: true,
     responsive: [{
         breakpoint: 480,
         settings: {
+          slidesPerRow: 1,
           slidesToShow: 1,
           slidesToScroll: 1
         }
@@ -45,6 +48,10 @@ export default class Apps extends Component {
       });
     }
   }
+
+  componentDidMount(){
+    this.getapps();
+  }
  
   render(){
     const {apps, imgs}=this.state;
@@ -52,21 +59,20 @@ export default class Apps extends Component {
     return(
         <div height={'100%'}>
           <div className="container">
-          <h6 className='heading'>Applications</h6>
           {this.state.apps.length === 0 ? (
             <div className='spinner-border' role='status'>
-              <span className='sr-only' onLoad={this.getapps()} >Loading...</span>
+              <span className='sr-only' >Loading...</span>
             </div>
           ):(
             <Slider {...this.settings}>  
             {this.state.apps.length > 0 && this.state.apps.map((current,index)=>(
-            <div className='out' key={current.id} style={{width:'610px'}}>
+            <div className='out' key={current.id}>
               <div className='card'>
                 <h5 className='card-title'>{current.name}</h5>
                 <div className='row'>
                   <div className='img'><SimpleImageSlider
-                    width={210}
-                    height={150}
+                    width={310}
+                    height={160}
                     images={this.state.imgs[index]}
                     showBullets={false}
                   /></div>

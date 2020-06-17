@@ -1,6 +1,6 @@
 export const UPDATE_LIKE = 'UPDATE_LIKE';
 
-export const updateLike = () => {
+export const updatelike = () => {
     return function(dispatch){
         let data = {likes: 1}
         return fetch('http://localhost:2021/home', {
