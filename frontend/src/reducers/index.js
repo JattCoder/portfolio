@@ -1,7 +1,9 @@
 import { combineReducers } from 'redux'
 import quote from './getquote'
-import uplike from './updateLike'
+import gethome from './gethome'
 
-export default combineReducers({
-  quote,uplike
+const rootresucers =  combineReducers({
+  quote,gethome
 })
+
+export default rootresucers

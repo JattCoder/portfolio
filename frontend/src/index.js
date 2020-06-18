@@ -1,15 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { createStore, applyMiddleware } from "redux";
-import thunk from 'redux-thunk'
 import { Provider } from "react-redux";
-import reducer from './reducers/index'
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import './Styles/backgrounda.css'
+import Store from './store/store'
 
-const store = createStore(reducer, applyMiddleware(thunk));
+let store = Store()
 
 ReactDOM.render(
   <Provider store={store}>

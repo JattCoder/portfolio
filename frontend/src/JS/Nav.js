@@ -2,26 +2,57 @@ import React, { Component } from 'react';
 import TopNav from './TopNav';
 import BottomNav from './BottomNav';
 import Like from './Like';
+import { bindActionCreators } from 'redux';
+import { connect } from 'react-redux';
+import { gethome } from '../actions/gethome'
 
 class Nav extends Component {
   state = {
-    linkedin: "https://www.linkedin.com/in/harmandeep-mand-softwarelife/",
-    github: "https://github.com/JattCoder",
-    email: "harmandeepmand.hm@gmail.com",
-    addlike: 1
+    linkedin: "",
+    github: "",
+    email: "",
+    likes: 0
+  }
+
+  componentDidMount(){
+    this.props.gethome();
   }
 
     render(){
+      let likes = this.props.data;
       return(
         <div>
           <div>
-            <TopNav/>
-            <Like like={this.state.addlike}/>
-            <BottomNav linkedin={this.state.linkedin} github={this.state.github} email={this.state.email}/>
+            {this.state.likes ? (
+              <div>
+                <h1>Loading...</h1>
+              </div>
+            ):(
+              <div>
+                <TopNav/>
+                <Like like={likes.likes}/>
+                <BottomNav linkedin={likes.linkedin} github={likes.github} email={likes.email}/>
+              </div>
+            )}
           </div>
         </div>
       );
     }
 }
 
-export default Nav;
+function outside (){
+  alert('have access to it')
+}
+
+function mapStateToProps (state){
+  return {
+    data: state.gethome
+  }
+}
+function mapDispatchToProps(dispatch){
+  return {
+    gethome: bindActionCreators(gethome,dispatch)
+  }
+}
+
+export default connect(mapStateToProps,mapDispatchToProps)(Nav);

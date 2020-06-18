@@ -1,9 +1,7 @@
 import { GET_QUOTE } from '../actions/getquote';
 const reducer = (state = {}, action) => {
-
   switch (action.type) {
     case GET_QUOTE:
-      console.log(action);
        return { ...state, quote: action.data.quote };
     default:
        return state;
