@@ -13,7 +13,7 @@ export default class Review extends Component{
 
     render(){
         return (
-            <div style={{marginTop:200}}>
+            <div id='outsidediv' style={{marginTop:200}}>
                 <Input colors={this.state.colors}/>
             </div>
         )

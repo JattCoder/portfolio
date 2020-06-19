@@ -21,7 +21,7 @@ const TopNav = () => {
                     <li>About</li>
                   </Link>
                   <Link className='navStyle' to='/review'>
-                    <li>Reviews</li>
+                    <li>Feedback</li>
                   </Link>
                 </ul>
             </nav>
