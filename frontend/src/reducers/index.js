@@ -2,8 +2,8 @@ import { combineReducers } from 'redux'
 import quote from './getquote'
 import gethome from './gethome'
 
-const rootresucers =  combineReducers({
+const rootreducers =  combineReducers({
   quote,gethome
 })
 
-export default rootresucers
+export default rootreducers

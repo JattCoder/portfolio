@@ -40,10 +40,6 @@ class Nav extends Component {
     }
 }
 
-function outside (){
-  alert('have access to it')
-}
-
 function mapStateToProps (state){
   return {
     data: state.gethome

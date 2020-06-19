@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_06_06_034317) do
+ActiveRecord::Schema.define(version: 2020_06_18_381955) do
 
   create_table "abouts", force: :cascade do |t|
     t.string "name"
@@ -31,8 +31,22 @@ ActiveRecord::Schema.define(version: 2020_06_06_034317) do
     t.string "email"
   end
 
+  create_table "images", force: :cascade do |t|
+    t.string "app_id"
+    t.string "url"
+  end
+
+  create_table "languages", force: :cascade do |t|
+    t.string "name"
+    t.string "img"
+  end
+
   create_table "quotes", force: :cascade do |t|
     t.string "quote"
+  end
+
+  create_table "reviews", force: :cascade do |t|
+    t.string "review"
   end
 
 end

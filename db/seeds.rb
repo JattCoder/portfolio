@@ -33,6 +33,43 @@ Apps.new({
     source:'https://github.com/JattCoder/portfolio.git',
     live:'https://drive.google.com/file/d/1lXCpbrt6WjcxwPsjmgwTvLiAdSD_zdr8/view?usp=sharing'}).save
 
+Images.new({
+    app_id: Apps.where(name: 'Cricket Standings').id,
+    url: '../AppImgs/App1/1.PNG'
+}).save
+Images.new({
+    app_id: Apps.where(name: 'Cricket Standings').id,
+    url: '../AppImgs/App1/2.PNG'
+}).save
+Images.new({
+    app_id: Apps.where(name: 'Cricket Standings').id,
+    url: '../AppImgs/App1/3.PNG'
+}).save
+Images.new({
+    app_id: Apps.where(name: 'Cricket Standings').id,
+    url: '../AppImgs/App1/4.PNG'
+}).save
+Images.new({
+    app_id: Apps.where(name: 'Tesla Find-Us').id,
+    url: '../AppImgs/App2/1.PNG'
+}).save
+Images.new({
+    app_id: Apps.where(name: 'Tesla Find-Us').id,
+    url: '../AppImgs/App2/2.PNG'
+}).save
+Images.new({
+    app_id: Apps.where(name: 'Tesla Find-Us').id,
+    url: '../AppImgs/App2/3.PNG'
+}).save
+Images.new({
+    app_id: Apps.where(name: 'Tesla Find-Us').id,
+    url: '../AppImgs/App2/4.PNG'
+}).save
+Images.new({
+    app_id: Apps.where(name: 'Google').id,
+    url: '../AppImgs/App3/1.PNG'
+}).save
+
 Quote.new({quote:'How does a project get to be a year late?... One day at a time.'}).save
 Quote.new({quote:'Programming can be fun, so can cryptography; however they should not be combined.'}).save
 Quote.new({quote:'When to use iterative development? You should use iterative development only on projects that you want to succeed.'}).save

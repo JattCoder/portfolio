@@ -5,6 +5,7 @@ import Home from './JS/Home';
 import Sorting from './JS/Sorting'
 import About from './JS/About'
 import Apps from './JS/Apps'
+import Review from './JS/Review'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
             <Route exact={true} path='/sorting' component={Sorting}/>
             <Route exact={true} path='/apps' component={Apps}/>
             <Route exact={true} path='/about' component={About}/>
+            <Route exact={true} path='/review' component={Review}/>
           </Switch>
         </div>
     </Router>
