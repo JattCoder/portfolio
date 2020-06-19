@@ -32,7 +32,7 @@ ActiveRecord::Schema.define(version: 2020_06_18_381955) do
   end
 
   create_table "images", force: :cascade do |t|
-    t.string "app_id"
+    t.integer "app_id"
     t.string "url"
   end
 

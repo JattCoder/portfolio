@@ -34,40 +34,121 @@ Apps.new({
     live:'https://drive.google.com/file/d/1lXCpbrt6WjcxwPsjmgwTvLiAdSD_zdr8/view?usp=sharing'}).save
 
 Images.new({
-    app_id: Apps.where(name: 'Cricket Standings').id,
+    app_id: Apps.find_by(name: 'Cricket Standings').id,
     url: '../AppImgs/App1/1.PNG'
 }).save
 Images.new({
-    app_id: Apps.where(name: 'Cricket Standings').id,
+    app_id: Apps.find_by(name: 'Cricket Standings').id,
     url: '../AppImgs/App1/2.PNG'
 }).save
 Images.new({
-    app_id: Apps.where(name: 'Cricket Standings').id,
+    app_id: Apps.find_by(name: 'Cricket Standings').id,
     url: '../AppImgs/App1/3.PNG'
 }).save
 Images.new({
-    app_id: Apps.where(name: 'Cricket Standings').id,
+    app_id: Apps.find_by(name: 'Cricket Standings').id,
     url: '../AppImgs/App1/4.PNG'
 }).save
 Images.new({
-    app_id: Apps.where(name: 'Tesla Find-Us').id,
+    app_id: Apps.find_by(name: 'Tesla Find-Us').id,
     url: '../AppImgs/App2/1.PNG'
 }).save
 Images.new({
-    app_id: Apps.where(name: 'Tesla Find-Us').id,
+    app_id: Apps.find_by(name: 'Tesla Find-Us').id,
     url: '../AppImgs/App2/2.PNG'
 }).save
 Images.new({
-    app_id: Apps.where(name: 'Tesla Find-Us').id,
+    app_id: Apps.find_by(name: 'Tesla Find-Us').id,
     url: '../AppImgs/App2/3.PNG'
 }).save
 Images.new({
-    app_id: Apps.where(name: 'Tesla Find-Us').id,
+    app_id: Apps.find_by(name: 'Tesla Find-Us').id,
     url: '../AppImgs/App2/4.PNG'
 }).save
 Images.new({
-    app_id: Apps.where(name: 'Google').id,
+    app_id: Apps.find_by(name: 'Google').id,
     url: '../AppImgs/App3/1.PNG'
+}).save
+Images.new({
+    app_id: Apps.find_by(name: 'Meet Up').id,
+    url: '../AppImgs/App4/1.PNG'
+}).save
+Images.new({
+    app_id: Apps.find_by(name: 'Meet Up').id,
+    url: '../AppImgs/App4/2.PNG'
+}).save
+Images.new({
+    app_id: Apps.find_by(name: 'Meet Up').id,
+    url: '../AppImgs/App4/3.PNG'
+}).save
+Images.new({
+    app_id: Apps.find_by(name: 'Meet Up').id,
+    url: '../AppImgs/App4/4.PNG'
+}).save
+Images.new({
+    app_id: Apps.find_by(name: 'Portfolio').id,
+    url: '../AppImgs/App5/1.PNG'
+}).save
+Images.new({
+    app_id: Apps.find_by(name: 'Portfolio').id,
+    url: '../AppImgs/App5/2.PNG'
+}).save
+Images.new({
+    app_id: Apps.find_by(name: 'Portfolio').id,
+    url: '../AppImgs/App5/3.PNG'
+}).save
+Images.new({
+    app_id: Apps.find_by(name: 'Portfolio').id,
+    url: '../AppImgs/App5/4.PNG'
+}).save
+
+Languages.new({
+    name: 'Ruby',
+    img: '../Languages/ruby.svg'
+}).save
+Languages.new({
+    name: 'Rails',
+    img: '../Languages/rails.svg'
+}).save
+Languages.new({
+    name: 'Javascript',
+    img: '../Languages/javascript.svg'
+}).save
+Languages.new({
+    name: 'HTML5',
+    img: '../Languages/html5.svg'
+}).save
+Languages.new({
+    name: 'CSS3',
+    img: '../Languages/css3.svg'
+}).save
+Languages.new({
+    name: 'React',
+    img: '../Languages/react.svg'
+}).save
+Languages.new({
+    name: 'Redux',
+    img: '../Languages/redux.svg'
+}).save
+Languages.new({
+    name: 'Java',
+    img: '../Languages/java.svg'
+}).save
+Languages.new({
+    name: 'Python',
+    img: '../Languages/python.svg'
+}).save
+Languages.new({
+    name: 'C',
+    img: '../Languages/c.svg'
+}).save
+Languages.new({
+    name: 'C#',
+    img: '../Languages/csharp.svg'
+}).save
+Languages.new({
+    name: 'C++',
+    img: '../Languages/cplusplus.svg'
 }).save
 
 Quote.new({quote:'How does a project get to be a year late?... One day at a time.'}).save
