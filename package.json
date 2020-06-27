@@ -8,10 +8,12 @@
     "test": "test"
   },
   "scripts": {
-    "start": "cd frontend && npm start",
-    "build": "cd frontend && npm install && npm run build && cd ..",
-    "deploy": "cp -a frontend/build/.public/",
-    "postinstall": "npm run build && npm run deploy && echo 'Client build'"
+    "dev": "cd frontend && react-scripts start",
+    "start": "cd frontend && serve -s build",
+    "build": "cd frontend && react-scripts build",
+    "test": "cd frontend && react-scripts test --env=jsdom",
+    "eject": "cd frontend && react-scripts eject",
+    "heroku-postbuild": "cd frontend && npm run build"
   },
   "repository": {
     "type": "git",
