@@ -2,10 +2,11 @@
     text-align: center;
     padding-top: 10px;
     opacity: 1;
-    width: 500px;
+    width: 250px;
     height: 350px;
-    margin: 30px;
+    margin: 15px;
     background-color: burlywood;
+    display: inline-block;
 }
 
 .card-title{
@@ -19,6 +20,7 @@
     margin: 15px;
 }
 
+
 .container{
     text-align: center;
     width: 100px;
@@ -27,8 +29,9 @@
 
 .img{
     display: block;
-    margin-left: 40px;
-    margin-right: 10px;
+    margin-left: 14px;
+    margin-top: -11px;
+    overflow-y: hidden;
 }
 
 .slick-prev:before, .slick-next:before {
