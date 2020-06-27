@@ -1,0 +1,25 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Harmandeep Mands Portfolio",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "build": "cd frontend && npm install && npm run build && cd ..",
+    "deploy": "cp -a frontend/build/.public/",
+    "postinstall": "npm run build && npm run deploy && echo 'Client build'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JattCoder/portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JattCoder/portfolio/issues"
+  },
+  "homepage": "https://github.com/JattCoder/portfolio#readme"
+}
