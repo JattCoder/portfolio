@@ -21,7 +21,6 @@ let ReviewInput = () =>{
 let submitHandler = (dispatch) =>{
     let review = document.getElementById('subject') 
     dispatch(submitReview(review.value));
-    //if results are bad, then canle displaying message
     review.value = ''
     displayMessage();
 }
